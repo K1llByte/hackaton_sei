@@ -1,0 +1,1496 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap%27');
+body {
+    background-image: radial-gradient(at bottom left, #ADD8E6, #90EE90);
+    /* background-image: url('../images/backgroud.png'); */
+    font-family: 'Ubuntu';
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom,#A8DBD7, #5CD19F); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5CD19F; 
+}
+    
+.login {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 390px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.register {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 520px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+
+
+.profile {
+    background-color: #FFFFFF;
+    left: 10px;
+    width: 400px;
+    height: 500px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.register_sign {
+    padding-top: 35px;
+    color: #329d9c;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-weight: bold; */
+    font-size: 23px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sign {
+    padding-top: 40px;
+    color:#329d9c;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-weight: bold; */
+    font-size: 23px;
+}
+
+.reset_password {
+    padding-top: 65px;
+    color: #329d9c;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-weight: bold; */
+    font-size: 23px;
+}
+
+.reset_text {
+    /* padding-top: 40px; */
+    margin-left: 55px;
+    margin-right: 55px;
+    color: #666566;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.un {
+	width: 76%;
+	color: rgb(38, 50, 56);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: rgba(136, 126, 126, 0.04);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.02);
+	margin-bottom: 50px;
+	margin-left: 46px;
+	text-align: center;
+	margin-bottom: 27px;
+	font-family: 'Ubuntu', sans-serif, FontAwesome;
+}
+
+form.form1 {
+    padding-top: 40px;
+}
+
+.pass {
+        width: 76%;
+        color: rgb(38, 50, 56);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        margin-bottom: 50px;
+        margin-left: 46px;
+        margin-right: 5px;
+        text-align: center;
+        margin-bottom: 27px;
+        font-family: 'Ubuntu', sans-serif, FontAwesome;
+}
+
+.has-error{
+  border: 2px solid brown;
+  border-radius: 20px;
+}
+
+.has-success{
+  border: 2px solid #329d9c;
+  border-radius: 20px;
+}
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right,  #56c596, #7be495);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #7BE495;
+	padding: 15px;
+}
+.forgot a:visited{
+  color:#7BE495;
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    /* color: #7BE495; */
+    text-decoration: none
+}
+
+a:link {
+  /* color: #5CD19F; */
+  color: #000;
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+}
+
+.hide-show{
+width: 94%;
+margin: -3.62em 3% 0 1.5%;
+position: relative;
+z-index: 5;
+display: none;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  color: #f2f2f2;
+	overflow: hidden;
+	height: 75px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  /* float: left; */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: 0.3s;
+  /* display:inline-block; */
+}
+
+.topnav a:visited{
+  color: #f2f2f2;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  
+  transition: 0.3s;
+  color: #333333;
+  display:inline-block;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:  #5CD19F;
+  color: black;
+  display:inline-block;
+}
+
+.links:hover{
+  background-color: #ddd;
+}
+
+
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+	float: right;
+}
+
+.card {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.stats {
+    background: #f2f5f8 !important;
+    color: #000 !important
+}
+
+.articles {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number1 {
+    font-weight: 500
+}
+
+.followers {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number2 {
+    font-weight: 500
+}
+
+.rating {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number3 {
+    font-weight: 500
+}
+
+.profile_pic {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+  }
+
+.profile_name {
+    display: inline-block;
+    margin-left: 160px;
+    width: 100px;
+    height: 70px;
+    padding: 5px;
+  }
+
+  .edit {
+    cursor: pointer;
+      border-radius: 12px;
+      color: #fff;
+      background: #329d9c;
+      border: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      margin-left: 35%;
+      font-size: 13px;
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
+
+  .edit-form{
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    justify-content: center;
+    /* margin-bottom: 50px; */
+    /* margin-left: 46px; */
+    text-align: center;
+    margin-left: 46px;
+    margin-right: 27px;
+    /* margin-bottom: 27px; */
+    /* font-family: 'Ubuntu', sans-serif, FontAwesome; */
+    align-self: center;
+  }
+
+  .align {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 120px;
+    width: 100px;
+    height: 70px;
+    padding: 5px;
+  }
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.button-rate {
+  margin-left: 10px; 
+  font-size: larger; 
+  margin-bottom: 10px;
+  border: 2px solid rgb(172, 172, 172);
+  background-color: #CCC;
+  border-radius: 5px;
+}
+
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+/* .rate:not(:checked) > label:before {
+    content: '★ ';
+} */
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+/* ///////////////////////////////// */  
+  /* - - - - - RATINGS */
+  .rating {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 30px;
+    padding: 5px 10px;
+    margin: auto;
+    border-radius: 30px;
+    background: #FFF;
+    display: block;
+    overflow: hidden;
+    
+    box-shadow: 0 1px #CCC,
+                0 5px #DDD,
+                0 9px 6px -3px #999;
+    
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+  .rating:not(:checked) > input {
+    display: none;
+  }
+  
+  /* - - - - - RATE */
+  #rate {
+    top: -65px;
+  }
+  #rate:not(:checked) > label {
+    cursor:pointer;
+    float: right;
+    width: 30px;
+    height: 30px;
+    display: block;
+    
+    color: rgba(0, 135, 211, .4);
+    line-height: 33px;
+    text-align: center;
+  }
+  #rate:not(:checked) > label:hover,
+  #rate:not(:checked) > label:hover ~ label {
+    color: rgba(0, 135, 211, .6);
+  }
+  #rate > input:checked + label:hover,
+  #rate > input:checked + label:hover ~ label,
+  #rate > input:checked ~ label:hover,
+  #rate > input:checked ~ label:hover ~ label,
+  #rate > label:hover ~ input:checked ~ label {
+    color: rgba(0, 135, 211, .8);
+  }
+  #rate > input:checked ~ label {
+    color: rgb(0, 135, 211);
+  }
+  /* - - - - - LIKE */
+  #like {
+    bottom: -65px;
+  }
+  #like:not(:checked) > label {
+    cursor:pointer;
+    float: right;
+    width: 30px;
+    height: 30px;
+    display: block;
+    
+    color: rgba(233, 54, 40, .4);
+    line-height: 33px;
+    text-align: center;
+  }
+  #like:not(:checked) > label:hover,
+  #like:not(:checked) > label:hover ~ label {
+    color: rgba(233, 54, 40, .6);
+  }
+  #like > input:checked + label:hover,
+  #like > input:checked + label:hover ~ label,
+  #like > input:checked ~ label:hover,
+  #like > input:checked ~ label:hover ~ label,
+  #like > label:hover ~ input:checked ~ label {
+    color: rgba(233, 54, 40, .8);
+  }
+  #like > input:checked ~ label {
+    color: rgb(233, 54, 40);
+  }
+
+  .caixinha{
+    background: white;
+    border-radius: 15px;
+    /* margin: 30px; */
+    margin-left: 10px auto;
+    margin-right: 10px auto;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px; 
+    max-width: 1500px;
+    display: flex;
+    /* Aqui faz com que dentro da topbar as coisas estejam alinhadas em coluna */
+    flex-direction: column; 
+  }
+
+  #more {display: none;}
+
+  button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+/* Barra de cimal */
+.topbar {
+  background-color: rgb(228, 228, 228);
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  /* Aqui faz com que dentro da topbar as coisas estejam alinhadas em linha */
+  flex-direction: row;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  
+  /* Estes dois fazem com que utilizando flex as cenas fiquem centradas horizontal e verticalmente */
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-topbar {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 250px;
+  /* Estes dois fazem com que utilizando flex as cenas fiquem centradas horizontal e verticalmente */
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  /* margin: -10px; */
+  /* linha da direita */
+  border-right: solid 2px rgb(172, 172, 172);
+}
+
+.profile-topbar:hover{
+  height: 60px;
+  margin-right: 10px;
+  background-color: #eeeeee;
+  /* border-radius: 10px 0px 0px 10px; */
+}
+
+.resource-post {
+  display: inline;
+  flex-direction: row;
+  height: 60px;
+  width: 150px;
+  /* Estes dois fazem com que utilizando flex as cenas fiquem centradas horizontal e verticalmente */
+  align-items: center;
+  justify-content: center;
+  /* align-content: center; */
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 15px;
+  /* linha da direita */
+  border-right: solid 2px rgb(172, 172, 172);
+}
+
+.profile-name{
+  padding: 10px;
+  padding-right: 40px;
+}
+
+.profile-picture {
+  /* Deixar a imagem redonda */
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+
+  /* Estes dois fazem com que utilizando flex as cenas fiquem centradas horizontal e verticalmente */
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.profile-image-navbar {
+  /* Deixar a imagem redonda */
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  /* margin: 0px; */
+  /* padding: 10px; */
+  /* display: flex; */
+  /* flex-direction: row; */
+
+  /* Estes dois fazem com que utilizando flex as cenas fiquem centradas horizontal e verticalmente */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* padding: 10px; */
+}
+
+.profile-picture-comments {
+  /* Deixar a imagem redonda */
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+
+  /* Estes dois fazem com que utilizando flex as cenas fiquem centradas horizontal e verticalmente */
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.comment-author{
+  font-size: large; 
+  font-weight: bold; 
+  color: black; 
+  margin-left: 40px;
+}
+
+.profile-pic-edit {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  vertical-align: middle;
+  text-align: center;
+  color: transparent;
+  transition: all .3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.profile-pic-edit:hover {
+  background-color: rgba(0,0,0,.5);
+  z-index: 10000;
+  color: #fff;
+  transition: all .3s ease;
+  text-decoration: none;
+}
+
+.profile-pic-edit span {
+  display: inline-block;
+  padding-top: 2.5em;
+  /* padding-bottom: 4.5em; */
+}
+
+form input[type="file"] {
+  display: none;
+  cursor: pointer;
+}
+
+.resource {
+  /* flex: 1 faz com que preencha os espaços vazios dentro do container que está em flex */
+  flex: 1;
+  padding: 10px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.resource1 {
+  /* flex: 1 faz com que preencha os espaços vazios dentro do container que está em flex */
+  flex: 1;
+  height: 100%;
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.resource1:hover{
+  /* margin-left: 10px; */
+  background-color: #eeeeee;
+  height: 60px;
+}
+
+.text-box {
+  padding: 15px;
+}
+
+.bottom-bar {
+  display: flex;
+  flex-direction: row;
+  /* linha de cima */
+  border-top: solid 1px rgb(212, 212, 212);
+  margin-top: 10px;
+  align-items: center;
+}
+
+.resource-rate {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  padding-left: 10px;
+  flex: 1;
+  /* alinha as coisas à esquerda dentro do container em flex */
+  justify-content: flex-end;
+}
+
+.bottom-buttons a{
+  color:#000;
+  margin-right: 10px;
+}
+
+.bottom-button {
+  height: 20px;
+  padding: 10px;
+}
+
+.post{
+  background-color: rgb(228, 228, 228);
+  padding: 10px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.topbar-post {
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  /* Aqui faz com que dentro da topbar as coisas estejam alinhadas em linha */
+  flex-direction: row;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  
+  /* Estes dois fazem com que utilizando flex as cenas fiquem centradas horizontal e verticalmente */
+  align-items: center;
+}
+
+.box-resource-post{
+  background: rgb(92, 209, 159, 0.25);
+  border-left: 10px solid #5CD19F;
+  margin: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 30px; 
+  display: flex;
+  /* Aqui faz com que dentro da topbar as coisas estejam alinhadas em coluna */
+  flex-direction: column; 
+  padding: 10px; 
+  /* border-radius: 10px; */
+}
+
+.comments{
+  border-bottom-right-radius: 15px;
+  /* border-right: 10px solid #329d9c;  */
+  padding: 10px;
+  position: relative;
+  align-items: center;
+  /* margin-bottom: 15px; */
+  max-height: 200px;
+  overflow: auto;
+}
+
+ 
+/* Handle */
+.comments::-webkit-scrollbar-thumb {
+  background: #329d9c;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.comments::-webkit-scrollbar-thumb:hover {
+  background: #5CD19F; 
+}
+
+.comment{
+  padding: 5px;
+  border-top: solid 1px rgb(212, 212, 212);
+  margin-bottom: 15px;
+}
+
+.add-comments{
+  padding: 10px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.add-comment {
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: 2px solid darkgray;
+}
+
+.add-comment:focus, :active {
+	border: 0px none;
+}
+
+.doublebox-page-content {
+  display:flex;
+  justify-content:center;
+  height:calc(100vh - 75px);
+  width: 100%;
+  /* padding: 20px; */
+}
+
+.doublebox-page-leftBox{
+  height:100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.doublebox-page-leftBox-outerBox{
+  max-height: 35rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.doublebox-page-leftBox-innerbox{
+  width: 25rem;
+  height: 25rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow:  10px 10px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.doublebox-page-leftBox-innerbox>.something>h2{
+  font-size: 2.5em;
+}
+.doublebox-page-leftBox-innerbox>.something>h3{
+  font-size: 2em;
+}
+.doublebox-page-leftBox-innerbox>.something>p{
+  font-size: 1.5em;
+}
+
+.doublebox-page-leftBox-innerbox img{
+  border-radius: 100px;
+  box-shadow:  5px 5px 10px 0px rgba(0, 0, 0, 0.11);
+}
+
+.doublebox-page-leftBox-button {
+  display: block;
+  background-color:  #92d3c7;
+  height: 5rem;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  transition: 0.2s;
+  box-shadow:  5px 10px 15px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  /* display:none; */
+}
+
+.doublebox-page-leftBox-button:hover{
+  cursor: pointer;
+  background-color: transparent;
+  color:white;
+  transition: 0.2s;
+}
+
+
+
+.doublebox-page-leftBox-button-inner {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+}
+
+.accept-button {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  /* background-color: rgb(0, 130, 0); */
+  background-color: #b3ffb3;
+  color:#333;
+}
+
+.deny-button {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  /* background-color: rgb(180, 0, 0); */
+  background-color: #ffccf2;
+  color: #333;
+}
+
+.admin-buttons{
+  display: inline;
+  margin-bottom: 20px;
+}
+
+.doublebox-page-rightBox{
+  height:100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.doublebox-page-rightBox-innerbox{
+  width: 70rem;
+  max-height: 40rem;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-color: white;
+  border-width: 5px;
+  border-radius: 10px;
+  box-shadow:  10px 10px 10px 0px rgba(0, 0, 0, 0.15);
+  overflow: auto;
+}
+
+.doublebox-page-rightBox-innerbox-title {
+  /* display: grid; */
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #333333;
+  box-shadow:  0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.doublebox-page-rightBox-innerbox-title>button{
+  margin:15px;
+  color: #DDDDDD;
+  margin-left: 50px;
+  margin-right: 15px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.doublebox-page-rightBox-innerbox-title button:hover{
+  background-color: #bbb;
+}
+
+.doublebox-page-rightBox-innerbox-title button.active{
+  background-color: #ccc;
+  color:#000;
+}
+
+.doublebox-page-rightBox-innerbox-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100% - 80px);
+  overflow: auto;
+}
+
+.doublebox-page-rightBox-innerbox-content-activityContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  width: 100%;
+}
+
+.doublebox-page-rightBox-innerbox-content-activityBox{
+  width: 90%;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #A1E0C4;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-columns: 15px 15px 10fr 1fr;
+  grid-template-rows: 60% 40%;
+  grid-template-areas: 
+    ". description description linkButton"
+    ". . timeInfo linkButton";
+}
+.doublebox-page-rightBox-innerbox-content-linkButtonContainer{
+  grid-area: linkButton;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.3s;
+}
+.doublebox-page-rightBox-innerbox-content-linkButtonContainer:hover{
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.246);
+}
+
+.doublebox-page-rightBox-innerbox-content-linkIconContainer{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.doublebox-page-rightBox-innerbox-content-linkIconContainer i{
+  font-size: 50px;
+  transform: scaleX(-1);
+}
+
+.doublebox-page-rightBox-innerbox-content-description{
+  grid-area: description;
+  display: grid;
+  align-items: center;
+}
+.doublebox-page-rightBox-innerbox-content-timeInfo{
+  grid-area: timeInfo;
+}
+
+.doublebox-page-rightBox-innerbox-content-activityBox h3,
+.doublebox-page-rightBox-innerbox-content-activityBox p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.doublebox-page-rightBox-innerbox-content-activityBox h3{
+  font-size: 25;
+  color: black;
+}
+
+.doublebox-page-rightBox-innerbox-content-activityBox p{
+  font-size: 16;
+  color: #4A4A4A;
+}
+
+
+
+.doublebox-page-rightBox-innerbox-section-box {
+  width: 100%;
+  height:6rem;
+  margin-top: 1.5rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+}
+.doublebox-page-rightBox-innerbox-section-box>h1, .doublebox-page-rightBox-innerbox-section-box>h3 {
+  height: 50%;
+  margin: 10px;
+  display: grid;
+  margin-left: 3rem;
+  align-items: center;
+}
+
+.doublebox-page-rightBox-innerbox-section-box-editTitle {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.savechangesbtn {
+  display: none;
+  width: 100%;
+  height: 4rem;
+  background-color: #92d3c7;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.savechangesbtn:hover{
+  cursor: pointer;
+  background-color: #A8DBD7;
+  color:white;
+  transition: 0.2s;
+}
+.centerStuff{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.doublebox-page-rightBox-innerbox-section-box-editTitle h1{
+  margin: 0;
+  margin-left: 3rem;
+}
+.flexFiller{
+  width:1px;
+  height: 1px;
+  flex-basis: 100%;
+}
+.editButton {
+  background-color: #92d3c7;
+  width: 6rem;
+  height: 3rem;
+  margin-right: 3rem;
+  border-radius: 10px;
+  transition: 0.2s;
+  box-shadow:  5px 5px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.editButton:hover{
+  cursor: pointer;
+  background-color: #A8DBD7;
+  color:white;
+  transition: 0.2s;
+}
+
+.editButton > p{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.doublebox-page-rightBox-innerbox-section-box h3 {
+  font-weight: normal;
+  margin-left: 4rem;
+}
+
+.new-resource {
+  background-color: #FFFFFF;
+  width: 450px;
+  /* height: 500px auto; */
+  margin: 7em auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  justify-content: space-between;
+  
+}
+
+.new-resource-text{
+  justify-content: wrap-reverse;
+  align-self: flex-end;
+  width: 300px;
+}
+
+.new-resource-textbox{
+  justify-content: wrap-reverse;
+  align-self: flex-end;
+  /* width: 300px; */
+  height: 200px;
+}
+
+.resource-form {
+  margin-left: 20px;
+  margin-right: 20px;
+  /* color: #5CD19F; */
+  font-family: 'Ubuntu', sans-serif;
+  /* font-weight: bold; */
+  font-size: 18px;
+  display: flex;
+  /* text-align: center; */
+  justify-content: space-between;
+}
+
+a:visited{
+  color:black;
+}
+.shadows-and-round-corners{
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 10px;
+}
+
+input[type="file"] { 
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
+input:focus + label {
+  outline: 2px solid;
+}
+
+.error-box{
+  background: white;
+  border-radius: 15px;
+  /* margin: 40px; */
+  width: 500px;
+  height: 450px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  /* display:inline-flex; */
+  /* Aqui faz com que dentro da topbar as coisas estejam alinhadas em coluna */
+  /* flex-direction: flex;  */
+  justify-items: center;
+  justify-content: center;
+  text-justify: center;
+}
+
+.error-404 {
+  padding-top: 40px;
+  margin-bottom: 60px;
+  background: -webkit-linear-gradient(#A8DBD7, #5CD19F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Ubuntu', sans-serif;
+  /* font-weight: bold; */
+  font-size: 100px;
+  text-align: center;
+}
+
+.error-button{
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right,  #56c596, #7be495);
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 35%;
+  margin-top: 35px;
+  font-size: 13px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  
+}
+
+.logo {
+  background: transparent;
+}
+.logo:hover{
+  background-color: rgba(255, 255, 255, 0.116);
+}
+
+.resrsPage-Content{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 75px);
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.resources-box {
+  width: 80%;
+  margin-top: 1rem;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resource-box{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 1rem;
+  position: relative;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  padding: 10px;
+}
+
+.search-box{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  margin: 1rem;
+  /* padding: 10px; */
+  background-color: #FFFFFF;
+  /* Estes dois fazem com que utilizando flex as cenas fiquem centradas horizontal e verticalmente */
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.search{
+  display: block;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 60%;
+  /* margin-left: 30px; */
+  border: solid #5CD19F;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.search-text{
+  /* align-items: center;
+  justify-content: center; */
+  width: 100%;
+  display: inline;
+	font-size: 14px;
+	text-align: center;
+  font-family: 'Ubuntu', sans-serif, FontAwesome;
+  border: 0px none;
+}
+
+.search-text:focus, :active{
+  border: 0px none;
+  outline: none;
+  border-color: transparent;
+}
+
+.search-type{
+  /* width: auto; */
+  /* height: fit-content; */
+  width: 200px;
+  height: 40px;
+  margin: 20px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 22px;
+  /* background-color:#5CD19F; */
+  border: solid #5CD19F;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+}
+
+.add-type{
+    cursor: pointer;
+    /* width: 400px; */
+    height: 40px;
+    border-radius: 10px;
+    color: #fff;
+    background: linear-gradient(to right,  #56c596, #7be495);
+    /* border: 0; */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-bottom: 10px; */
+    /* padding-top: 10px; */
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+    /* margin-top: 10px; */
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.type-text{
+  width: 200px;
+	color: rgb(38, 50, 56);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: rgba(136, 126, 126, 0.04);
+	padding: 10px 10px;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.02);
+	margin-bottom: 50px;
+	margin-left: 46px;
+	text-align: center;
+	margin-bottom: 27px;
+	font-family: 'Ubuntu', sans-serif, FontAwesome;
+}
+
+.posts-about-resource{
+  width: 90%;
+  /* height: 80px; */
+  border-radius: 10px;
+  background-color: #A1E0C4;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+.noticias{
+  justify-content: center;
+  text-align: center;
+  text-shadow: 2px 2px #4A4A4A;
+  font-size: xx-large;
+}
+
+.setinha{
+  color: #000;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.setinha:link{
+  color: #000;
+}
+
+.pagination{
+  color: #999;
+}
+
+.search-text:active{
+  border: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+@media (max-width: 1650px) {
+  .doublebox-page-content{
+    height: auto;
+    flex-direction: column;
+    max-height: none;
+  }
+  .doublebox-page-leftBox{
+    width: 100%;
+    height: 40rem;
+  }
+  .doublebox-page-leftBox-outerBox{
+    width: 75%;
+  }
+  .doublebox-page-leftBox-innerBox{
+    width: 100%;
+  }
+  .doublebox-page-rightBox{
+    width: 100%;
+  }
+  .doublebox-page-rightBox-innerbox{
+    width: 75%;
+    margin-bottom: 50px;
+  }
+  .doublebox-page-rightBox-innerbox{
+    max-height: none;
+  }
+  .doublebox-page-rightBox-innerbox-content{
+    margin: 10px 0px;
+  }
+  .savechangesbtn {
+    display: flex;
+  }
+  .resources-box{
+    width: 100%;
+  }
+}

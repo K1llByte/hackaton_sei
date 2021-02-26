@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel = "icon" href="../images/logo.png"
+  type = "image/x-icon"> 
+  <title>Sign in</title>
+</head>
+
+<body>
+    <div class="login">
+        <p class="sign" align="center">Sign in</p>
+        <form class="form1">
+            <input class="un " type="text" align="center" placeholder="&#xf0e0; Email address" required="required"/>
+
+            <input class="pass" type="password" align="center" placeholder="&#xf023; Password" required="required" id="myInput"/> 
+            <i onclick="changeEye(this)" class="fa fa-eye fa-eye-slash"></i>
+
+            <button class="submit" >Sign in</button>
+
+            <div class="forgot" align="center">
+                <a href="#">Register</a>  
+            </div>
+        </form>            
+    </div>
+     
+</body>
+
+<script>
+    function changeEye(icon) {
+        var x = document.getElementById("myInput");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+        icon.classList.toggle("fa-eye-slash");
+    }
+</script>
+
+</html>
