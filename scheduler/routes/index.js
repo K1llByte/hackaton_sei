@@ -34,31 +34,20 @@ function auth_header(token)
 }
 
 // ---------------------------------------------------------------
-//----------- ROTAS NAO NECESSITAM AUTENTICAÇAO ------------------
+// ------------------------- ROUTES ------------------------------
 // ---------------------------------------------------------------
 
 router.get('/',(req,res) => {
     res.json({ "message":"chill" });
 });
 
+
 router.get('/login',(req,res) => {
     res.render('login');
 });
 
-// router.get('/login', (req, res, next) => {
-//     if(req.user != undefined)
-//     {
-//         res.redirect('/users/@me');
-//     }
-//     else
-//     {
-//         res.render('login');
-//     }
-// });
-
 
 router.post('/login', passport.authenticate('local'), (req, res) => {
-    // Data retrieve
     res.redirect('/schedule');
 });
 
@@ -87,35 +76,8 @@ router.get('/schedule', check_auth, async (req,res) => {
     .catch(err => {
         res.json({ "error": err.message })
     });
-    
-    
-    // try 
-    // {
-    //     let asd = await Schedule.get('SC','PL1');
-    //     console.log(asd);
-    //     res.json(asd);
-    // }
-    // catch {
-    //     console.log("error");
-    // }
 });
-
-
-// ---------------------------------------------------------------
-// ------------- PAGINAS QUE NECESSITAM AUTENTICAÇAO -------------
-// ---------------------------------------------------------------
-
-
 
 
 
 module.exports = router;
-
-
-
-// POST /login
-// POST /logout
-// GET /users/:user
-// GET /users/:user/courses
-
-// GET /courses/:course_id/shifts
