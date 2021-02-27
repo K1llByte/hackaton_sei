@@ -1,0 +1,20 @@
+[
+    {
+        "username": "a85272",
+        "password": "a_password",
+        "courses": [
+            {
+                "course_id": "SC",
+                "shift": null
+            },
+            {
+                "course_id": "PI",
+                "shift": null
+            },
+            {
+                "course_id": "LI2",
+                "shift": null
+            }
+        ]
+    }
+]

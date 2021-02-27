@@ -1,0 +1,29 @@
+[
+    {
+        "course_id": "SC",
+        "shifts": [
+            "PL1",
+            "PL2",
+            "PL3",
+            "PL4"
+        ]
+    },
+    {
+        "course_id": "PI",
+        "shifts": [
+            "PL1",
+            "PL2",
+            "PL3",
+            "PL4"
+        ]
+    },
+    {
+        "course_id": "LI2",
+        "shifts": [
+            "PL1",
+            "PL2",
+            "PL3",
+            "PL4"
+        ]
+    }
+]
