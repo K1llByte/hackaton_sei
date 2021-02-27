@@ -35,31 +35,32 @@ module.exports.get_all = async (tuples) => {
     {
         
         const cid = tuples[i].course_id;
-        const sid = tuples[i].shift;
-        let response = (await this.get(cid,sid)).toObject();
-
-        if(response != null)
+        const shifts = tuples[i].shifts;
+        console.log("tuples[i]",tuples[i]);
+        console.log("shifts",shifts);
+        for(let j = 0 ; j < shifts.length ; ++j )
         {
-            result.push({
-                "course_id":   cid,
-                "course_name": response.name,
-                "shift_id":    sid,
-                "schedule": response.schedule
-            });
-        }
+            const sid = shifts[j];
+            let response = (await this.get(cid,sid)).toObject();
+    
+            if(response != null)
+            {
+                result.push({
+                    "course_id":   cid,
+                    "course_name": response.name,
+                    "shift_id":    sid,
+                    "schedule":    response.schedule
+                });
+            }
+        } 
     }
 
     return result;
 }
 
 
-module.exports.make_schedule = async (user) => {
+module.exports.mk_user_schedule = async (user) => {
     
     let userdata = await axios.get(`${API_URL}/api/users/${user.username}`,auth_header(user.token));
-
-    //let schedules = this.get_all(userdata.data.courses);
-
-    //console.log("schedules",schedules);
-    
     return this.get_all(userdata.data.courses);;
 }

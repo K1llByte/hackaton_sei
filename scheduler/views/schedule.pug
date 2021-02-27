@@ -2,53 +2,39 @@ html
   script.
       document.getElementsByTagName("html")[0].className += " js";
   link(rel='stylesheet' href='../static/css/style.css')
-  title Schedule Template | CodyHouse
+  title MonkeSwap
 header.cd-main-header.text-center.flex.flex-column.flex-center
-  p.margin-top-md.margin-bottom-xl
-    | &#x1F448; 
-    a.cd-article-link(href='https://codyhouse.co/gem/schedule-template') Article &amp; Download
+  
   h1.text-xl Schedule Template
 .cd-schedule.cd-schedule--loading.margin-top-lg.margin-bottom-lg.js-cd-schedule
   .cd-schedule__timeline
     ul
       li
-        span 09:00
+        span 08:00
       li
-        span 09:30
+        span 09:00
       li
         span 10:00
       li
-        span 10:30
-      li
         span 11:00
-      li
-        span 11:30
       li
         span 12:00
       li
-        span 12:30
-      li
         span 13:00
-      li
-        span 13:30
       li
         span 14:00
       li
-        span 14:30
-      li
         span 15:00
-      li
-        span 15:30
       li
         span 16:00
       li
-        span 16:30
-      li
         span 17:00
       li
-        span 17:30
-      li
         span 18:00
+      li
+        span 19:00
+      li
+        span 20:00
   // .cd-schedule__timeline
   .cd-schedule__events
     ul
@@ -59,7 +45,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 0
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -69,7 +55,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 1
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -79,7 +65,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 2
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -89,7 +75,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 3
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -99,7 +85,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 4
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -109,7 +95,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 5
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -119,7 +105,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 6
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
   .cd-schedule-modal
