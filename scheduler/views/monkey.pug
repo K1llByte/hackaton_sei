@@ -1,0 +1,141 @@
+html
+  link(rel='stylesheet' href='../static/css/style.css')
+  title Schedule Template | CodyHouse
+header.cd-main-header.text-center.flex.flex-column.flex-center
+  p.margin-top-md.margin-bottom-xl
+    | &#x1F448; 
+    a.cd-article-link(href='https://codyhouse.co/gem/schedule-template') Article &amp; Download
+  h1.text-xl Schedule Template
+.cd-schedule.cd-schedule--loading.margin-top-lg.margin-bottom-lg.js-cd-schedule
+  .cd-schedule__timeline
+    ul
+      li
+        span 09:00
+      li
+        span 09:30
+      li
+        span 10:00
+      li
+        span 10:30
+      li
+        span 11:00
+      li
+        span 11:30
+      li
+        span 12:00
+      li
+        span 12:30
+      li
+        span 13:00
+      li
+        span 13:30
+      li
+        span 14:00
+      li
+        span 14:30
+      li
+        span 15:00
+      li
+        span 15:30
+      li
+        span 16:00
+      li
+        span 16:30
+      li
+        span 17:00
+      li
+        span 17:30
+      li
+        span 18:00
+  // .cd-schedule__timeline
+  .cd-schedule__events
+    ul
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Monday
+        ul
+          li.cd-schedule__event
+            a(data-start='09:30' data-end='10:30' data-content='event-abs-circuit' data-event='event-1' href='#0')
+              em.cd-schedule__name Abs Circuit
+          li.cd-schedule__event
+            a(data-start='11:00' data-end='12:30' data-content='event-rowing-workout' data-event='event-2' href='#0')
+              em.cd-schedule__name Rowing Workout
+          li.cd-schedule__event
+            a(data-start='14:00' data-end='15:15' data-content='event-yoga-1' data-event='event-3' href='#0')
+              em.cd-schedule__name Yoga Level 1
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Tuesday
+        ul
+          li.cd-schedule__event
+            a(data-start='10:00' data-end='11:00' data-content='event-rowing-workout' data-event='event-2' href='#0')
+              em.cd-schedule__name Rowing Workout
+          li.cd-schedule__event
+            a(data-start='11:30' data-end='13:00' data-content='event-restorative-yoga' data-event='event-4' href='#0')
+              em.cd-schedule__name Restorative Yoga
+          li.cd-schedule__event
+            a(data-start='13:30' data-end='15:00' data-content='event-abs-circuit' data-event='event-1' href='#0')
+              em.cd-schedule__name Abs Circuit
+          li.cd-schedule__event
+            a(data-start='15:45' data-end='16:45' data-content='event-yoga-1' data-event='event-3' href='#0')
+              em.cd-schedule__name Yoga Level 1
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Wednesday
+        ul
+          li.cd-schedule__event
+            a(data-start='09:00' data-end='10:15' data-content='event-restorative-yoga' data-event='event-4' href='#0')
+              em.cd-schedule__name Restorative Yoga
+          li.cd-schedule__event
+            a(data-start='10:45' data-end='11:45' data-content='event-yoga-1' data-event='event-3' href='#0')
+              em.cd-schedule__name Yoga Level 1
+          li.cd-schedule__event
+            a(data-start='12:00' data-end='13:45' data-content='event-rowing-workout' data-event='event-2' href='#0')
+              em.cd-schedule__name Rowing Workout
+          li.cd-schedule__event
+            a(data-start='13:45' data-end='15:00' data-content='event-yoga-1' data-event='event-3' href='#0')
+              em.cd-schedule__name Yoga Level 1
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Thursday
+        ul
+          li.cd-schedule__event
+            a(data-start='09:30' data-end='10:30' data-content='event-abs-circuit' data-event='event-1' href='#0')
+              em.cd-schedule__name Abs Circuit
+          li.cd-schedule__event
+            a(data-start='12:00' data-end='13:45' data-content='event-restorative-yoga' data-event='event-4' href='#0')
+              em.cd-schedule__name Restorative Yoga
+          li.cd-schedule__event
+            a(data-start='15:30' data-end='16:30' data-content='event-abs-circuit' data-event='event-1' href='#0')
+              em.cd-schedule__name Abs Circuit
+          li.cd-schedule__event
+            a(data-start='17:00' data-end='18:30' data-content='event-rowing-workout' data-event='event-2' href='#0')
+              em.cd-schedule__name Rowing Workout
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Friday
+        ul
+          li.cd-schedule__event
+            a(data-start='10:00' data-end='11:00' data-content='event-rowing-workout' data-event='event-2' href='#0')
+              em.cd-schedule__name Rowing Workout
+          li.cd-schedule__event
+            a(data-start='12:30' data-end='14:00' data-content='event-abs-circuit' data-event='event-1' href='#0')
+              em.cd-schedule__name Abs Circuit
+          li.cd-schedule__event
+            a(data-start='15:45' data-end='16:45' data-content='event-yoga-1' data-event='event-3' href='#0')
+              em.cd-schedule__name Yoga Level 1
+  .cd-schedule-modal
+    header.cd-schedule-modal__header
+      .cd-schedule-modal__content
+        span.cd-schedule-modal__date
+        h3.cd-schedule-modal__name
+      .cd-schedule-modal__header-bg
+    .cd-schedule-modal__body
+      .cd-schedule-modal__event-info
+      .cd-schedule-modal__body-bg
+    a.cd-schedule-modal__close.text-replace(href='#0') Close
+  .cd-schedule__cover-layer
+// .cd-schedule
+script(src='assets/js/util.js')
+// util functions included in the CodyHouse framework
+script(src='assets/js/main.js')

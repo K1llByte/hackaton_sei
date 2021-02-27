@@ -25,6 +25,11 @@ function check_auth(req, res, next)
     }
 }
 
+function make_schedule_list(object)
+{
+    
+}
+
 // function auth_header(token)
 // {
 //     return {
@@ -60,9 +65,15 @@ router.get('/login', (req, res, next) => {
 
 router.post('/login', passport.authenticate('local'), (req, res) => {
     // Data retrieve
-    res.redirect('/eduasis')
+    res.redirect('/monkey')
 });
 
+router.get('/monkey', (req, res) => {
+    // Data retrieve
+    res.render('monkey',{
+        
+    });
+});
 
 // router.get('/logout', (req, res) => {
 //   req.logout();
