@@ -24,13 +24,11 @@ const course_schema = new mongoose.Schema({
     couse_id: String,
     name:     String,
     shifts:   [shift_schema]
-}, 
+},
 {
     versionKey: false,
-    collection: 'courses'
+    collection: 'schedules'
 });
-
-
 
 module.exports = mongoose.model('course_schema', course_schema);
 

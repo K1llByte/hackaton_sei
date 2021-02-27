@@ -12,48 +12,70 @@ const session = require('express-session');
 const FileStore = require('session-file-store')(session);
 
 const passport = require('passport');
-const OAuth2Strategy = require('passport-oauth2').Strategy;
+const LocalStrategy = require('passport-local').Strategy;
 const axios = require('axios');
-
+const mongoose = require('mongoose');
 
 var bodyParser = require('body-parser');
-// var jsonfile = require('jsonfile')
-// var fs = require('fs');
 
-const CLIENT_ID = "3ee4f6e8-da20-440a-8d9c-c70398e4a5d7";
-const CLIENT_SECRET = "PNlIaaRNRNETmISU8bYrvlMmSFxj32SH";
 
-// OAuth2 config
-passport.use(new OAuth2Strategy({
-    authorizationURL: "https://developer.blackboard.com/learn/api/public/v1/oauth2/authorizationcode",
-    tokenURL: "https://elearning.uminho.pt/learn/api/public/v1/oauth2/token",
-    clientID: CLIENT_ID,
-    clientSecret: CLIENT_SECRET,
-    callbackURL: "http://localhost:7700/auth/bb/cb"
-},
-function(accessToken, refreshToken, profile, cb) {
-    console.log("passed here");
-    cb(null,{ "username":"nome","password":"coisas" });
-    //User.findOrCreate({ exampleId: profile.id }, function (err, user) {
-    //    return cb(err, user);
-    //});
-}
-));
+
+// Set up default mongoose connection
+const MONGODB_URL = 'mongodb://127.0.0.1/scheduler';
+mongoose.connect(MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
+// Get the default connection
+const db = mongoose.connection;
+
+// Bind connection to error event (to get notification of connection errors)
+db.on('error', console.error.bind(console, 'MongoDB connection error...'));
+db.once('open', function() {
+    console.log("Connected to MongoDB successfully...")
+});
+
+// // OAuth2 config
+// passport.use(new OAuth2Strategy({
+//     authorizationURL: "https://developer.blackboard.com/learn/api/public/v1/oauth2/authorizationcode",
+//     tokenURL: "https://elearning.uminho.pt/learn/api/public/v1/oauth2/token",
+//     clientID: CLIENT_ID,
+//     clientSecret: CLIENT_SECRET,
+//     callbackURL: "http://localhost:7700/auth/bb/cb"
+// },
+// function(accessToken, refreshToken, profile, cb) {
+//     console.log("passed here");
+//     cb(null,{ "username":"nome","password":"coisas" });
+//     //User.findOrCreate({ exampleId: profile.id }, function (err, user) {
+//     //    return cb(err, user);
+//     //});
+// }
+// ));
+
+// Configuração da estratégia local
+passport.use(new LocalStrategy(
+    { usernameField: 'username' }, (user, pass, done) => {
+
+        axios.post('http://localhost:7700/api/login/',{username: user, password: pass})
+        .then(data => {
+            const decoded = jwt.decode(data.data.TOKEN);
+            
+            const user_data = {
+                "token" : data.data.TOKEN,
+                "username" : decoded.username
+            }
+            done(null, user_data);
+        })
+        .catch(err => {
+            done(err);
+        });
+    })
+);
 
 // Indica-se ao passport como serializar o utilizador
 passport.serializeUser((user,done) => {
-    //console.log('Serielização, id: ' + user.username)
     done(null, user)
 })
   
 // Desserialização: a partir do id obtem-se a informação do utilizador
 passport.deserializeUser((user, done) => {
-  // console.log('Desserielização, id: ' + uid)
-    //axios.get('http://localhost:7700/api/users/' + user.username,{
-    //    headers: { 'Authorization': 'Bearer ' +  }
-    // })
-    //.then(dados => done(null, dados))
-    //.catch(erro => done(erro, false));
     done(null, user);
 })
 
@@ -61,16 +83,16 @@ passport.deserializeUser((user, done) => {
 var index_router = require('./routes/index');
 var app = express();
 
-// app.use(session({
-//     genid: (req) => {
-//       return uuidv4()
-//     },
-//     store: new FileStore({logFn: function(){}}),
-//     secret: 'O meu segredo',
-//     resave: false,
-//     saveUninitialized: false,
-//     retries: 0
-// }))
+app.use(session({
+    genid: (req) => {
+      return uuidv4()
+    },
+    store: new FileStore({logFn: function(){}}),
+    secret: 'O meu segredo',
+    resave: false,
+    saveUninitialized: false,
+    retries: 0
+}))
 
 
 // view engine setup
@@ -87,10 +109,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(function(req, res, next){
-  // console.log('Signed Cookies: ', JSON.stringify(req.signedCookies))
-  // console.log('Session: ', JSON.stringify(req.session))
-  next()
+app.use(function(req, res, next)
+{
+    // console.log('Signed Cookies: ', JSON.stringify(req.signedCookies))
+    // console.log('Session: ', JSON.stringify(req.session))
+    next()
 })
 
 app.use(fileUpload( {createParentPath:true} ));
@@ -135,7 +158,3 @@ app.use(function(err, req, res, next)
 });
 
 module.exports = app;
-
-
-
-//curl -k --user 9dd9431d-33cc-4ff8-8ee9-d2d78adab9be:PNlIaaRNRNETmISU8bYrvlMmSFxj32SH --data "grant_type=client_credentials" https://elearning.uminho.pt/learn/api/public/v1/oauth2/token

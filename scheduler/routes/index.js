@@ -7,16 +7,17 @@ const FormData = require('form-data');
 
 const bodyParser = require('body-parser');
 const jsonfile = require('jsonfile');
+const jwt = require('jsonwebtoken');
+const Schedule = require('../controllers/schedule');
 
-API_URL = 'https://elearning.uminho.pt'
+API_URL = 'https://localhost:7700'
 
 function check_auth(req, res, next)
 {
     if(req.isAuthenticated())
     {
-        //const decoded = jwt.decode(req.user.token);
-        //req.user.username = decoded.username;
-        //req.user.perms = decoded.perms;
+        const decoded = jwt.decode(req.user.token);
+        req.user.username = decoded.username;
         next();
     } 
     else
@@ -25,55 +26,67 @@ function check_auth(req, res, next)
     }
 }
 
-// function auth_header(token)
-// {
-//     return {
-//         headers: { 'Authorization': 'Bearer ' + token }
-//     }
-// }
+function auth_header(token)
+{
+    return {
+        headers: { 'Authorization': 'Bearer ' + token }
+    }
+}
 
 // ---------------------------------------------------------------
 //----------- ROTAS NAO NECESSITAM AUTENTICAÇAO ------------------
 // ---------------------------------------------------------------
 
-
-// GET /auth/bb
-// GET /auth/bb/cb
-
 router.get('/',(req,res) => {
     res.json({ "message":"chill" });
 });
 
-router.get('/auth/bb', passport.authenticate('oauth2'));
-
-router.get('/login', (req, res, next) => {
-    if(req.user != undefined)
-    {
-        res.redirect('/users/@me');
-    }
-    else
-    {
-        res.render('login');
-    }
+router.get('/login',(req,res) => {
+    res.render('login');
 });
+
+// router.get('/login', (req, res, next) => {
+//     if(req.user != undefined)
+//     {
+//         res.redirect('/users/@me');
+//     }
+//     else
+//     {
+//         res.render('login');
+//     }
+// });
 
 
 router.post('/login', passport.authenticate('local'), (req, res) => {
     // Data retrieve
-    res.redirect('/eduasis')
+    res.redirect('/schedule')
 });
 
 
-// router.get('/logout', (req, res) => {
-//   req.logout();
-//   req.session.destroy((err) => {
-//     if (!err) {
-//         res.redirect('/');
-//     } else {
-//         console.log('Destroy session error: ', err)
-//     }
-//   });
-// });
+router.get('/logout', (req, res) => {
+    req.logout();
+    req.session.destroy((err) => {
+        if (!err) 
+        {
+            res.redirect('/');
+        }
+        else 
+        {
+            console.log('Destroy session error: ', err)
+        }
+    });
+});
+
+
+router.get('/schedule', check_auth, async (req,res) => {
+    try {
+        let asd = await Schedule.get('SC','PL1');
+        console.log(asd);
+        res.json(asd);
+    } catch {
+        console.log("error");
+    }
+});
 
 
 // ---------------------------------------------------------------

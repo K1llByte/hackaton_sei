@@ -1,0 +1,149 @@
+[
+    {
+        "course_id": "SC",
+        "shifts" : [
+            {
+                "shift_id": "PL1",
+                "schedule": {
+                    "day_of_week": 1,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 2, DI",
+                    "professor": "Prof. JVV",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL2",
+                "schedule": {
+                    "day_of_week": 1,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 3, DI",
+                    "professor": "Prof. JCC",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL3",
+                "schedule": {
+                    "day_of_week": 1,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 3, DI",
+                    "professor": "Prof. JCC",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL4",
+                "schedule": {
+                    "day_of_week": 1,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 3, DI",
+                    "professor": "Prof. JCC",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
+        "course_id": "PI",
+        "shifts" : [
+            {
+                "shift_id": "PL1",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 2, DI",
+                    "professor": "Prof. JVV",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL2",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 3, DI",
+                    "professor": "Prof. JCC",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL3",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 3, DI",
+                    "professor": "Prof. JCC",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL4",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 3, DI",
+                    "professor": "Prof. JCC",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
+        "course_id": "LI2",
+        "shifts" : [
+            {
+                "shift_id": "PL1",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 2, DI",
+                    "professor": "Prof. JVV",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL2",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 3, DI",
+                    "professor": "Prof. JCC",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL3",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 3, DI",
+                    "professor": "Prof. JCC",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL4",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T23:00:00.000Z",
+                    "end":   "1975-01-01T23:00:00.000Z",
+                    "room":  "Sala 3, DI",
+                    "professor": "Prof. JCC",
+                    "note":  ""
+                }
+            }
+        ]
+    }
+]
