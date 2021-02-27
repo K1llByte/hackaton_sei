@@ -1,5 +1,536 @@
 [
     {
+        "course_id": "MNONL",
+        "name": "Métodos Numéricos e Otimização Não Linear",
+        "shifts" : [
+            {
+                "shift_id": "TP1",
+                "schedule": {
+                    "day_of_week": 1,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 0.22, Edifício 1",
+                    "professor": "Prof. Teresa Monteiro",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "TP2",
+                "schedule": {
+                    "day_of_week": 1,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Sala 0.32, Edifício 2",
+                    "professor": "Prof. Teresa Monteiro",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "TP3",
+                "schedule": {
+                    "day_of_week": 1,
+                    "start": "1975-01-01T15:00:00.000Z",
+                    "end":   "1975-01-01T17:00:00.000Z",
+                    "room":  "Sala 0.08, Edifício 1",
+                    "professor": "Prof. Teresa Monteiro",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T1",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T11:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. Teresa Monteiro",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T2",
+                "schedule": {
+                    "day_of_week": 4,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T11:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. Teresa Monteiro",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
+        "course_id": "MDIO",
+        "name": "Métodos Determinísticos em Investigação Operacional",
+        "shifts" : [
+            {
+                "shift_id": "TP1",
+                "schedule": {
+                    "day_of_week": 1,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Sala 0.22, Edifício 1 / Online",
+                    "professor": "Prof. Valério",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "TP2",
+                "schedule": {
+                    "day_of_week": 1,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 0.32, Edifício 2 / 0nline",
+                    "professor": "Prof. Valério",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "TP3",
+                "schedule": {
+                    "day_of_week": 1,
+                    "start": "1975-01-01T13:00:00.000Z",
+                    "end":   "1975-01-01T15:00:00.000Z",
+                    "room":  "Sala 0.08, Edifício 1 / Online",
+                    "professor": "Prof. Valério",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T1",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": "1975-01-01T11:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. Valério",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T2",
+                "schedule": {
+                    "day_of_week": 4,
+                    "start": "1975-01-01T11:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. Valério",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
+        "course_id": "BD",
+        "name": "Base de Dados",
+        "shifts" : [
+            {
+                "shift_id": "PL1",
+                "schedule": {
+                    "day_of_week": 5,
+                    "start": "1975-01-01T10:30:00.000Z",
+                    "end":   "1975-01-01T12:30:00.000Z",
+                    "room":  "Sala 0.32, Edifício 2",
+                    "professor": "Prof. Belo",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL2",
+                "schedule": {
+                    "day_of_week": 5,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 2.21, Edifício 1",
+                    "professor": "Prof. Belo",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL3",
+                "schedule": {
+                    "day_of_week": 5,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 0.08, Edifício 1",
+                    "professor": "Prof. Belo",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL4",
+                "schedule": {
+                    "day_of_week": 5,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 0.22, Edifício 1",
+                    "professor": "Prof. Belo",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL5",
+                "schedule": {
+                    "day_of_week": 5,
+                    "start": "1975-01-01T10:30:00.000Z",
+                    "end":   "1975-01-01T12:30:00.000Z",
+                    "room":  "Sala 0.08, Edifício 1",
+                    "professor": "Prof. Belo",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL6",
+                "schedule": {
+                    "day_of_week": 5,
+                    "start": "1975-01-01T10:30:00.000Z",
+                    "end":   "1975-01-01T12:30:00.000Z",
+                    "room":  "Sala 0.22, Edifício 1",
+                    "professor": "Prof. Belo",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T1",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": "1975-01-01T09:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. Belo",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T2",
+                "schedule": {
+                    "day_of_week": 4,
+                    "start": "1975-01-01T09:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. Belo",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
+        "course_id": "DSS",
+        "name": "Desenvolvimento de Sistemas de Software",
+        "shifts" : [
+            {
+                "shift_id": "PL1",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T13:00:00.000Z",
+                    "end":   "1975-01-01T15:00:00.000Z",
+                    "room":  "Sala 1.15, Edifício 1",
+                    "professor": "Prof. Creissac",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL2",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T13:00:00.000Z",
+                    "end":   "1975-01-01T15:00:00.000Z",
+                    "room":  "Sala 1.16, Edifício 1",
+                    "professor": "Prof. Creissac",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL3",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 1.17, Edifício 1",
+                    "professor": "Prof. Creissac",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL4",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 1.18, Edifício 1",
+                    "professor": "Prof. Creissac",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL5",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Sala 1.19, Edifício 1",
+                    "professor": "Prof. Creissac",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL6",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Sala 1.21, Edifício 1",
+                    "professor": "Prof. Creissac",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL7",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T13:00:00.000Z",
+                    "end":   "1975-01-01T15:00:00.000Z",
+                    "room":  "Sala 0.28, Edifício 2",
+                    "professor": "Prof. Creissac",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T1",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": "1975-01-01T14:00:00.000Z",
+                    "end":   "1975-01-01T15:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. Creissac",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T2",
+                "schedule": {
+                    "day_of_week": 4,
+                    "start": "1975-01-01T14:00:00.000Z",
+                    "end":   "1975-01-01T15:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. Creissac",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
+        "course_id": "SD",
+        "name": "Sistemas Distribuídos",
+        "shifts" : [
+            {
+                "shift_id": "PL1",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 1.15, Edifício 1",
+                    "professor": "Prof. JOP",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL2",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 1.16, Edifício 1",
+                    "professor": "Prof. JOP",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL3",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Sala 1.17, Edifício 1",
+                    "professor": "Prof. JOP",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL4",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Sala 1.18, Edifício 1",
+                    "professor": "Prof. JOP",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL5",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T13:00:00.000Z",
+                    "end":   "1975-01-01T15:00:00.000Z",
+                    "room":  "Sala 1.19, Edifício 1",
+                    "professor": "Prof. JOP",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL6",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T13:00:00.000Z",
+                    "end":   "1975-01-01T15:00:00.000Z",
+                    "room":  "Sala 1.21, Edifício 1",
+                    "professor": "Prof. JOP",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL7",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 0.28, Edifício 2",
+                    "professor": "Prof. JOP",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T1",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": "1975-01-01T15:00:00.000Z",
+                    "end":   "1975-01-01T16:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. JOP",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T2",
+                "schedule": {
+                    "day_of_week": 4,
+                    "start": "1975-01-01T15:00:00.000Z",
+                    "end":   "1975-01-01T16:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. JOP",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
+        "course_id": "RC",
+        "name": "Redes de Computadores",
+        "shifts" : [
+            {
+                "shift_id": "PL1",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Sala 1.15, Edifício 1",
+                    "professor": "Prof. Paulinho",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL2",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Sala 1.16, Edifício 1",
+                    "professor": "Prof. Paulinho",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL3",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T13:00:00.000Z",
+                    "end":   "1975-01-01T15:00:00.000Z",
+                    "room":  "Sala 1.17, Edifício 1",
+                    "professor": "Prof. Paulinho",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL4",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T13:00:00.000Z",
+                    "end":   "1975-01-01T15:00:00.000Z",
+                    "room":  "Sala 1.18, Edifício 1",
+                    "professor": "Prof. Paulinho",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL5",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 1.19, Edifício 1",
+                    "professor": "Prof. Paulinho",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL6",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T08:00:00.000Z",
+                    "end":   "1975-01-01T10:00:00.000Z",
+                    "room":  "Sala 1.21, Edifício 1",
+                    "professor": "Prof. Paulinho",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "PL7",
+                "schedule": {
+                    "day_of_week": 3,
+                    "start": "1975-01-01T10:00:00.000Z",
+                    "end":   "1975-01-01T12:00:00.000Z",
+                    "room":  "Sala 0.28, Edifício 2",
+                    "professor": "Prof. Paulinho",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T1",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": "1975-01-01T16:00:00.000Z",
+                    "end":   "1975-01-01T17:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. Paulinho",
+                    "note":  ""
+                }
+            },
+            {
+                "shift_id": "T2",
+                "schedule": {
+                    "day_of_week": 4,
+                    "start": "1975-01-01T16:00:00.000Z",
+                    "end":   "1975-01-01T17:00:00.000Z",
+                    "room":  "Online - BCU",
+                    "professor": "Prof. Paulinho",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
         "course_id": "SC",
         "name":"",
         "shifts" : [
