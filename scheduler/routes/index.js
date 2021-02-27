@@ -59,7 +59,7 @@ router.get('/login',(req,res) => {
 
 router.post('/login', passport.authenticate('local'), (req, res) => {
     // Data retrieve
-    res.redirect('/schedule')
+    res.redirect('/schedule');
 });
 
 
@@ -72,7 +72,7 @@ router.get('/logout', (req, res) => {
         }
         else 
         {
-            console.log('Destroy session error: ', err)
+            console.log('Destroy session error: ', err);
         }
     });
 });
@@ -80,7 +80,6 @@ router.get('/logout', (req, res) => {
 
 router.get('/schedule', check_auth, async (req,res) => {
 
-    console.log("req.user.username",req.user.username);
     Schedule.make_schedule(req.user)
     .then(data => {
         res.json(data);
@@ -106,20 +105,6 @@ router.get('/schedule', check_auth, async (req,res) => {
 // ------------- PAGINAS QUE NECESSITAM AUTENTICAÇAO -------------
 // ---------------------------------------------------------------
 
-// router.get('/eduasis', check_auth, async (req,res) => {
-
-//     let resources_p = await axios.get(`${API_URL}/resources`,auth_header(req.user.token));
-//     let posts_p = await axios.get(`${API_URL}/posts`,auth_header(req.user.token));
-
-//     let resources = resources_p.data;
-//     let posts = posts_p.data;
-//     res.render('home_page',{
-//         'posts': posts,
-//         'resources': resources,
-//         'time_difference': time_difference,
-//         'user':req.user
-//     });
-// });
 
 
 
