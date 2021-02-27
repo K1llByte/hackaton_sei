@@ -10,7 +10,7 @@ const jsonfile = require('jsonfile');
 const jwt = require('jsonwebtoken');
 const Schedule = require('../controllers/schedule');
 
-API_URL = 'https://localhost:7700'
+
 
 function check_auth(req, res, next)
 {
@@ -79,13 +79,26 @@ router.get('/logout', (req, res) => {
 
 
 router.get('/schedule', check_auth, async (req,res) => {
-    try {
-        let asd = await Schedule.get('SC','PL1');
-        console.log(asd);
-        res.json(asd);
-    } catch {
-        console.log("error");
-    }
+
+    console.log("req.user.username",req.user.username);
+    Schedule.make_schedule(req.user)
+    .then(data => {
+        res.json(data);
+    })
+    .catch(err => {
+        res.json({ "error": err.message })
+    });
+    
+    
+    // try 
+    // {
+    //     let asd = await Schedule.get('SC','PL1');
+    //     console.log(asd);
+    //     res.json(asd);
+    // }
+    // catch {
+    //     console.log("error");
+    // }
 });
 
 

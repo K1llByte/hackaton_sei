@@ -1,6 +1,7 @@
 [
     {
         "course_id": "SC",
+        "name":"",
         "shifts" : [
             {
                 "shift_id": "PL1",
