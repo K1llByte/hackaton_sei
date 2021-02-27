@@ -16,5 +16,95 @@
                 "shift": null
             }
         ]
+    },
+    {
+        "username": "aXXXXX",
+        "password": "a_password",
+        "courses": [
+            {
+                "course_id": "MNONL",
+                "shift": "TP1"
+            },
+            {
+                "course_id": "MDIO",
+                "shift": "TP1"
+            },
+            {
+                "course_id": "SD",
+                "shift": "PL1"
+            },
+            {
+                "course_id": "RC",
+                "shift": "PL1"
+            },
+            {
+                "course_id": "DSS",
+                "shift": "PL1"
+            },
+            {
+                "course_id": "BD",
+                "shift": "PL1"
+            }
+        ]
+    },
+    {
+        "username": "aYYYYY",
+        "password": "a_password",
+        "courses": [
+            {
+                "course_id": "MNONL",
+                "shift": "TP2"
+            },
+            {
+                "course_id": "MDIO",
+                "shift": "TP2"
+            },
+            {
+                "course_id": "SD",
+                "shift": "PL2"
+            },
+            {
+                "course_id": "RC",
+                "shift": "PL2"
+            },
+            {
+                "course_id": "DSS",
+                "shift": "PL2"
+            },
+            {
+                "course_id": "BD",
+                "shift": "PL2"
+            }
+        ]
+    },
+    {
+        "username": "aZZZZZ",
+        "password": "a_password",
+        "courses": [
+            {
+                "course_id": "MNONL",
+                "shift": "TP3"
+            },
+            {
+                "course_id": "MDIO",
+                "shift": "TP3"
+            },
+            {
+                "course_id": "SD",
+                "shift": "PL3"
+            },
+            {
+                "course_id": "RC",
+                "shift": "PL3"
+            },
+            {
+                "course_id": "DSS",
+                "shift": "PL3"
+            },
+            {
+                "course_id": "BD",
+                "shift": "PL3"
+            }
+        ]
     }
 ]
