@@ -1,7 +1,7 @@
 {
-  "name": "eduasis",
+  "name": "sei2021",
   "version": "1.0.0",
-  "description": "A Educational platform to share serveral types of arquives such as books, essays, appointments, projects, etc... Users can get content or be a producer of content. Administrators approve content submited by the producers.",
+  "description": "",
   "main": "bin/www",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,12 +13,12 @@
   "keywords": [
     "daw"
   ],
-  "author": "KillByte, Trina",
+  "author": "Monki Nation",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/K1llByte/eduasis/issues"
+    "url": "https://github.com/K1llByte/hackaton_sei/issues"
   },
-  "homepage": "https://github.com/K1llByte/eduasis#readme",
+  "homepage": "https://github.com/K1llByte/hackaton_sei",
   "dependencies": {
     "axios": "^0.21.1",
     "connect-busboy": "^0.0.2",
@@ -34,6 +34,7 @@
     "multer": "^1.4.2",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "passport-oauth2": "^1.5.0",
     "pug": "^3.0.0",
     "session-file-store": "^1.5.0",
     "uuid": "^8.3.2"
