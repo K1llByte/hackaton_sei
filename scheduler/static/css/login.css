@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap%27');
+body {
+    /* background-image: radial-gradient(at bottom left, #B225EE, #7678FF); */
+    background-color: #333333;
+    font-family: 'Ubuntu';
+    overflow: hidden ;
+    background-image: url(../images/truchet1.png);
+}
+    
+.login {
+    background-color: #DDDDDD;
+    width: 400px;
+    height: 450px;
+    margin: 8em auto;
+    padding-top: 15px;
+    border-radius: 0.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+    padding-top: 30px;
+    color:#5d609d;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-weight: bold; */
+    font-size: 30px;
+}
+
+.forgot {
+    /* padding-top: 40px; */
+    margin-left: 55px;
+    margin-right: 55px;
+    color: #666566;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.un {
+	width: 76%;
+	color: rgb(38, 50, 56);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: rgba(136, 126, 126, 0.04);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.02);
+	margin-bottom: 50px;
+	margin-left: 46px;
+	text-align: center;
+	margin-bottom: 27px;
+	font-family: 'Ubuntu', sans-serif, FontAwesome;
+}
+
+form.form1 {
+    padding-top: 40px;
+}
+
+.pass {
+        width: 76%;
+        color: rgb(38, 50, 56);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        margin-bottom: 50px;
+        margin-left: 46px;
+        text-align: center;
+        margin-bottom: 27px;
+        font-family: 'Ubuntu', sans-serif, FontAwesome;
+}
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: #5d609d;
+    border-color: white;
+    border: 3px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;display: flex;
+    margin-top: 10px;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    transition: transform .2s;
+    border-radius: 0.7em;
+}
+
+.submit:hover {
+  background-color:#4e5183;
+  transition: background-color 1000ms linear;
+}
+
+.forgot {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #19DFE0;
+	padding: 15px;
+}
+.forgot a:visited{
+  color:#19DFE0;
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    /* color: #7BE495; */
+    text-decoration: none
+}
+
+a:link {
+  /* color: #5CD19F; */
+  color: #000;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  color: #f2f2f2;
+	overflow: hidden;
+	height: 75px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  /* float: left; */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: 0.3s;
+  /* display:inline-block; */
+}
+
+.topnav a:visited{
+  color: #f2f2f2;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  
+  transition: 0.3s;
+  color: #333333;
+  display:inline-block;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:  #5CD19F;
+  color: black;
+  display:inline-block;
+}
+
+.links:hover{
+  background-color: #ddd;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+	float: right;
+}
+
+.courses-title{
+  justify-content: left;
+  padding-left: 300px;
+  /* text-align: center; */
+  text-shadow: 2px 2px #4A4A4A;
+  font-size: xx-large;
+
+}
+
+.courses-box {
+  width: 80%;
+  margin-top: 1rem;
+  padding: 20px;
+  margin-left: 10%;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-items: center;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  border: collapse;
+  /* border-radius: 15px 15px 15px 15px; */
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.course-row{
+  border-bottom: 1px solid black;
+}
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.main-container {
+	position: relative;
+	top: 70px;
+	text-align: center;
+}
+
+
+/* html, body {
+  margin: 0;
+  font-family: 'monospace';
+  color: #546e7a;
+} */
+
+.schedule-box {
+  /* display: inline; */
+  width: 80%;
+  height: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* padding: 20px; */
+  margin-left: 10%;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-items: center;
+  /* background-color: #FFFFFF; */
+  font-size: 20px;
+  border: collapse;
+  /* border-radius: 15px 15px 15px 15px; */
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+* {
+  box-sizing: border-box;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+.center-horizontal{
+  justify-content: center;
+}
+
+.timetable {
+  display: grid;
+  grid-template-areas: ". week" "time content";
+  grid-template-columns: 120px;
+  grid-template-rows: 60px;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+.timetable .accent-pink {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #ee8ebc;
+}
+
+.timetable .accent-orange {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #eec08e;
+}
+
+.timetable .accent-green {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #bcee8e;
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+
+.timetable .accent-cyan {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #8eeec0;
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+
+.timetable .accent-blue {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #8edcee;
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+
+.timetable .accent-purple {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #c08eee;
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+
+.timetable .accent-yellow {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #ffff99;
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+
+.timetable .accent-red {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #ff6666;
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+
+.timetable .accent-gray {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #adadad;
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+
+.timetable .accent-white {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .weekend {
+  background: #fbfbfc;
+  color: #87a1ad;
+}
+.timetable .week-names {
+  grid-area: week;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.timetable .week-names > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 1px 0 0 #eceff1;
+}
+.timetable .time-interval {
+  grid-area: time;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  font-size: 14px;
+}
+.timetable .time-interval > div {
+  display: flex;
+  /* align-items: center; */
+  padding-top: 5px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 1px 0 0 #eceff1;
+}
+.timetable .content {
+  grid-area: content;
+  display: grid;
+  grid-template-rows: repeat(14, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+}
+.timetable .content > div {
+  box-shadow: inset 1px 0 0 #eceff1, inset 0 1px 0 0 #eceff1;
+}

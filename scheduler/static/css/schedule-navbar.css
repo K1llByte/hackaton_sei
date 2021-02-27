@@ -1,0 +1,22 @@
+.backgroundColor{
+    background-color: #5d609d;
+}
+
+.button:hover{
+    background-color:#54578d;
+    transition: background-color 200ms linear;
+}
+
+.myFont{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: white;
+    width: 76%;
+    font-size: 17px;
+    height: 1.5cm;
+    border: none;
+    text-decoration: none;
+}
