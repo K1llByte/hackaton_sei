@@ -59,7 +59,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 0
               li.cd-schedule__event
-                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -69,7 +69,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 1
               li.cd-schedule__event
-                a(data-start='09' data-end='11' data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -79,7 +79,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 2
               li.cd-schedule__event
-                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -89,7 +89,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 3
               li.cd-schedule__event
-                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -99,7 +99,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 4
               li.cd-schedule__event
-                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -109,7 +109,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 5
               li.cd-schedule__event
-                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -119,7 +119,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 6
               li.cd-schedule__event
-                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
   .cd-schedule-modal

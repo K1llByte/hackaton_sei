@@ -24,7 +24,7 @@ module.exports.get = (course_id,shift) => {
         return null;
     
     return Schedule
-        .findOne({course_id: course_id, "shifts.shift_id": shift},{ _id:0, "name":1 , "schedule":{ $arrayElemAt: [ "$shifts.schedule" , 0 ] }})
+        .findOne({course_id: course_id, "shifts.shift_id": shift},{ _id:0, "name":1 , "schedule":{ '$arrayElemAt': [ "$shifts.schedule" , 0 ] }})
         .exec()
 }
 
