@@ -22,8 +22,8 @@ const shift_schema = new mongoose.Schema({
 
 const course_schema = new mongoose.Schema({
     course_id: String,
-    name:     String,
-    shifts:   [shift_schema]
+    name:      String,
+    shifts:    [shift_schema]
 },
 {
     versionKey: false,
