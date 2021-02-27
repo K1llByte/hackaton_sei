@@ -1,0 +1,139 @@
+html
+  script.
+      document.getElementsByTagName("html")[0].className += " js";
+  link(rel='stylesheet' href='../static/css/style.css')
+  title Schedule Template | CodyHouse
+header.cd-main-header.text-center.flex.flex-column.flex-center
+  p.margin-top-md.margin-bottom-xl
+    | &#x1F448; 
+    a.cd-article-link(href='https://codyhouse.co/gem/schedule-template') Article &amp; Download
+  h1.text-xl Schedule Template
+.cd-schedule.cd-schedule--loading.margin-top-lg.margin-bottom-lg.js-cd-schedule
+  .cd-schedule__timeline
+    ul
+      li
+        span 09:00
+      li
+        span 09:30
+      li
+        span 10:00
+      li
+        span 10:30
+      li
+        span 11:00
+      li
+        span 11:30
+      li
+        span 12:00
+      li
+        span 12:30
+      li
+        span 13:00
+      li
+        span 13:30
+      li
+        span 14:00
+      li
+        span 14:30
+      li
+        span 15:00
+      li
+        span 15:30
+      li
+        span 16:00
+      li
+        span 16:30
+      li
+        span 17:00
+      li
+        span 17:30
+      li
+        span 18:00
+  // .cd-schedule__timeline
+  .cd-schedule__events
+    ul
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Monday
+        ul
+          each course in schedule
+            if course.schedule.day_of_week == 0
+              li.cd-schedule__event
+                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                  em.cd-schedule__name= `${course.course_id}`
+                  em.cd-schedule__name= `${course.shift_id}`
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Tuesday
+        ul
+          each course in schedule
+            if course.schedule.day_of_week == 1
+              li.cd-schedule__event
+                a(data-start='09' data-end='11' data-content='event-abs-circuit' data-event='event-1' href='#0')
+                  em.cd-schedule__name= `${course.course_id}`
+                  em.cd-schedule__name= `${course.shift_id}`
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Wednesday
+        ul
+          each course in schedule
+            if course.schedule.day_of_week == 2
+              li.cd-schedule__event
+                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                  em.cd-schedule__name= `${course.course_id}`
+                  em.cd-schedule__name= `${course.shift_id}`
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Thursday
+        ul
+          each course in schedule
+            if course.schedule.day_of_week == 3
+              li.cd-schedule__event
+                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                  em.cd-schedule__name= `${course.course_id}`
+                  em.cd-schedule__name= `${course.shift_id}`
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Friday
+        ul
+          each course in schedule
+            if course.schedule.day_of_week == 4
+              li.cd-schedule__event
+                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                  em.cd-schedule__name= `${course.course_id}`
+                  em.cd-schedule__name= `${course.shift_id}`
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span Saturday
+        ul
+          each course in schedule
+            if course.schedule.day_of_week == 5
+              li.cd-schedule__event
+                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                  em.cd-schedule__name= `${course.course_id}`
+                  em.cd-schedule__name= `${course.shift_id}`
+      li.cd-schedule__group
+        .cd-schedule__top-info
+          span SUnday
+        ul
+          each course in schedule
+            if course.schedule.day_of_week == 6
+              li.cd-schedule__event
+                a(data-start=`${course.schedule.start}` data-end=`${course.schedule.end}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                  em.cd-schedule__name= `${course.course_id}`
+                  em.cd-schedule__name= `${course.shift_id}`
+  .cd-schedule-modal
+    header.cd-schedule-modal__header
+      .cd-schedule-modal__content
+        span.cd-schedule-modal__date
+        h3.cd-schedule-modal__name
+      .cd-schedule-modal__header-bg
+    .cd-schedule-modal__body
+      .cd-schedule-modal__event-info
+      .cd-schedule-modal__body-bg
+    a.cd-schedule-modal__close.text-replace(href='#0') Close
+  .cd-schedule__cover-layer
+// .cd-schedule
+script(src='../static/js/util.js')
+// util functions included in the CodyHouse framework
+script(src='../static/js/main.js')
