@@ -105,7 +105,8 @@ form.form1 {
 }
 
 .submit:hover {
-  transform: scale(1.1); 
+  background-color:#3c3e66;
+  transition: background-color 1000ms linear;
 }
 
 .forgot {
