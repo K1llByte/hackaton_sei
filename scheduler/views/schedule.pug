@@ -1,8 +1,15 @@
+
 html
   script.
       document.getElementsByTagName("html")[0].className += " js";
   link(rel='stylesheet' href='../static/css/style.css')
+  link(rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css")
+  link(rel="stylesheet" href='../static/css/schedule-navbar.css')
   title Schedule Template | CodyHouse
+.w3-bar.backgroundColor
+  a.w3-bar-item.myFont.button(href='/schedule') My Schedule
+  a.w3-bar-item.myFont.button(href='#') Custom
+  a.w3-bar-item.myFont.button(href='/logout') Logout
 header.cd-main-header.text-center.flex.flex-column.flex-center
   p.margin-top-md.margin-bottom-xl
     | &#x1F448; 
