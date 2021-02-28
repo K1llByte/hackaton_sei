@@ -1233,7 +1233,7 @@ input:focus + label {
 .error-404 {
   padding-top: 40px;
   margin-bottom: 60px;
-  background: -webkit-linear-gradient(#A8DBD7, #5CD19F);
+  background: -webkit-linear-gradient(#5d609d, #767aca);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Ubuntu', sans-serif;
@@ -1244,9 +1244,9 @@ input:focus + label {
 
 .error-button{
   cursor: pointer;
-  border-radius: 5em;
+  border-radius: 0.7em;
   color: #fff;
-  background: linear-gradient(to right,  #56c596, #7be495);
+  background: linear-gradient(to right,  #5d609d, #767aca);
   border: 0;
   padding-left: 40px;
   padding-right: 40px;
