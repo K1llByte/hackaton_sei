@@ -75,6 +75,7 @@ router.get('/logout', (req, res) => {
 router.get('/schedule', check_auth, async (req,res) => {
     Schedule.mk_user_schedule(req.user)
     .then(data => {
+        console.log("data",data);
         res.render('schedule',{schedule: data, to_hour_minute: to_hour_minute});
     })
     .catch(err => {
