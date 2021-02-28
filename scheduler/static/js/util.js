@@ -101,7 +101,7 @@ Util.scrollTo = function(final, duration, cb) {
   Focus utility classes
 */
 
-//Move focus to an element
+// Move focus to an element
 Util.moveFocus = function (element) {
   if( !element ) element = document.getElementsByTagName("body")[0];
   element.focus();
@@ -131,7 +131,7 @@ Util.cssSupports = function(property, value) {
 /* 
 	Polyfills
 */
-//Closest() method
+// Closest() method
 if (!Element.prototype.matches) {
 	Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 }

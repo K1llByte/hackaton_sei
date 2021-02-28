@@ -1,10 +1,17 @@
 .backgroundColor{
     background-color: #5d609d;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .button:hover{
     background-color:#54578d;
     transition: background-color 200ms linear;
+    display:inline-block;
+    margin: 0;
 }
 
 .myFont{
@@ -16,7 +23,7 @@
     color: white;
     width: 76%;
     font-size: 17px;
-    height: 1.5cm;
+    height: 1.2cm;
     border: none;
     text-decoration: none;
 }
