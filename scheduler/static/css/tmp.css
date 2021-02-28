@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap%27');
 body {
-    background-image: radial-gradient(at bottom left, #ADD8E6, #90EE90);
-    /* background-image: url('../images/backgroud.png'); */
-    font-family: 'Ubuntu';
+  /* background-image: radial-gradient(at bottom left, #B225EE, #7678FF); */
+  background-color: #333333;
+  font-family: 'Ubuntu';
+  overflow: hidden ;
+  background-image: url(../images/truchet1.png);
 }
 
 /* width */
