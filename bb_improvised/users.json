@@ -110,5 +110,35 @@
                 "shifts": ["PL3"]
             }
         ]
+    },
+    {
+        "username": "aAAAAAA",
+        "password": "a_password",
+        "courses": [
+            {
+                "course_id": "MNONL",
+                "shifts": ["TP1","TP2"]
+            },
+            {
+                "course_id": "MDIO",
+                "shifts": ["TP3"]
+            },
+            {
+                "course_id": "SD",
+                "shifts": ["PL3"]
+            },
+            {
+                "course_id": "RC",
+                "shifts": ["PL3"]
+            },
+            {
+                "course_id": "DSS",
+                "shifts": ["PL3"]
+            },
+            {
+                "course_id": "BD",
+                "shifts": ["PL3"]
+            }
+        ]
     }
 ]
