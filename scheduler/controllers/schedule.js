@@ -68,5 +68,5 @@ module.exports.mk_user_schedule = async (user) => {
 
 module.exports.user_courses = async (user) => {
     let userdata = await axios.get(`${API_URL}/api/users/${user.username}`,auth_header(user.token));
-    return userdata;
+    return userdata.data;
 }

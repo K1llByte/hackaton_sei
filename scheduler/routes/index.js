@@ -96,7 +96,7 @@ router.get('/custom', async (req,res) => {
 });
 
 router.get('/courses', async (req,res) => {
-    Schedule.user_courses()
+    Schedule.user_courses(req.user)
     .then(data => {
         res.render('courses',{"courses": data.courses});
     })
@@ -104,7 +104,5 @@ router.get('/courses', async (req,res) => {
         res.render("error", err.message );
     });
 });
-
-
 
 module.exports = router;
