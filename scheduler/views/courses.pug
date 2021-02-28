@@ -1,0 +1,39 @@
+html
+  script.
+      document.getElementsByTagName("html")[0].className += " js";
+  link(rel='stylesheet' href='../static/css/style.css')
+  link(rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css")
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+  link(rel="stylesheet" href='../static/css/schedule-navbar.css')
+  title MonkeSwap
+.w3-bar.backgroundColor
+  a.w3-bar-item.myFont.button(href='/schedule') My Schedule
+  a.w3-bar-item.myFont.button(href='/courses') Courses
+  a.w3-bar-item.myFont.button(href='/logout') Logout
+
+header.cd-main-header.text-center.flex.flex-column.flex-center
+  p.margin-top-md.margin-bottom-xl
+    | &#x1F448; 
+    a.cd-article-link(href='https://https://github.com/K1llByte/hackaton_sei') Monkey Nation Github
+  
+// .cd-schedule
+script(src='../static/js/util.js')
+// util functions included in the CodyHouse framework
+script(src='../static/js/main.js')
+
+div(style='margin-left: 30%; margin-right:30%')
+    table
+      thead
+        tr
+          th Course ID
+          th Shifts
+      tbody
+        each c in courses
+            tr
+                td= `${c.course_id}`
+                - var shifts = ''
+                each shift in c.shifts
+                   - shifts +=`${shift} `
+                if shifts == '' 
+                    - shifts = 'None'
+                td=`${shifts}`

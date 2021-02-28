@@ -95,6 +95,31 @@ router.get('/custom', async (req,res) => {
     });
 });
 
-
+router.get('/courses', async (req,res) => {
+    res.render('courses',{
+        "courses" : [
+            {
+                "course_id": "LI1",
+                "name":"Laboratórios de Informática I",
+                "shifts": ["PL1","PL2","T1"]
+            },
+            {
+                "course_id": "LI2",
+                "name":"Laboratórios de Informática II",
+                "shifts": ["PL1"]
+            },
+            {
+                "course_id": "LI3",
+                "name":"Laboratórios de Informática III",
+                "shifts": ["PL1"]
+            },
+            {
+                "course_id": "LI4",
+                "name":"Laboratórios de Informática IV",
+                "shifts": []
+            }
+        ]
+    });
+});
 
 module.exports = router;
