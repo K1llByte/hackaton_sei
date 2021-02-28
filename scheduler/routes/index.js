@@ -95,6 +95,16 @@ router.get('/custom', async (req,res) => {
     });
 });
 
+router.get('/courses', async (req,res) => {
+    Schedule.user_courses()
+    .then(data => {
+        res.render('courses',{"courses": data.courses});
+    })
+    .catch(err => {
+        res.render("error", err.message );
+    });
+});
+
 
 
 module.exports = router;
