@@ -30,6 +30,28 @@
         ]
     },
     {
+        "username": "a85272",
+        "password": "a_password",
+        "courses": [
+            {
+                "course_id": "VI2",
+                "shifts": ["TP"]
+            },
+            {
+                "course_id": "TA",
+                "shifts": ["TP"]
+            },
+            {
+                "course_id": "ES",
+                "shifts": ["TP"]
+            },
+            {
+                "course_id": "EC",
+                "shifts": ["TP"]
+            }
+        ]
+    },
+    {
         "username": "aYYYYY",
         "password": "a_password",
         "courses": [

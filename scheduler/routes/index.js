@@ -42,9 +42,9 @@ function to_hour_minute(date)
 // ------------------------- ROUTES ------------------------------
 // ---------------------------------------------------------------
 
-router.get('/',(req,res) => {
-    res.json({ "message":"chill" });
-});
+// router.get('/',(req,res) => {
+//     res.json({ "message":"chill" });
+// });
 
 
 router.get('/login',(req,res) => {
@@ -62,7 +62,7 @@ router.get('/logout', (req, res) => {
     req.session.destroy((err) => {
         if (!err) 
         {
-            res.redirect('/');
+            res.redirect('/login');
         }
         else 
         {

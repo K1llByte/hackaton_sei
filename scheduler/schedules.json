@@ -1,5 +1,73 @@
 [
     {
+        "course_id": "VI2",
+        "name": "Visualização e Iluminação II",
+        "shifts": [
+            {
+                "shift_id": "TP",
+                "schedule": {
+                    "day_of_week": 4,
+                    "start": {"$date": "1975-01-01T09:00:00.000Z" },
+                    "end":   {"$date": "1975-01-01T12:00:00.000Z" },
+                    "room":  "Online",
+                    "professor": "Luis Paulo Santos",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
+        "course_id": "TA",
+        "name": "Tecnologias e Aplicações",
+        "shifts": [
+            {
+                "shift_id": "TP",
+                "schedule": {
+                    "day_of_week": 4,
+                    "start": {"$date": "1975-01-01T13:00:00.000Z" },
+                    "end":   {"$date": "1975-01-01T16:00:00.000Z" },
+                    "room":  "Online",
+                    "professor": "Jorge Gustavo",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
+        "course_id": "EC",
+        "name": "Estruturas Criptográficas",
+        "shifts": [
+            {
+                "shift_id": "TP",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": {"$date": "1975-01-01T09:00:00.000Z" },
+                    "end":   {"$date": "1975-01-01T12:00:00.000Z" },
+                    "room":  "Online",
+                    "professor": "José Valença",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
+        "course_id": "ES",
+        "name": "Engenharia de Segurança",
+        "shifts": [
+            {
+                "shift_id": "TP",
+                "schedule": {
+                    "day_of_week": 2,
+                    "start": {"$date": "1975-01-01T13:00:00.000Z" },
+                    "end":   {"$date": "1975-01-01T16:00:00.000Z" },
+                    "room":  "Online",
+                    "professor": "José Valença",
+                    "note":  ""
+                }
+            }
+        ]
+    },
+    {
         "course_id": "MNONL",
         "name": "Métodos Numéricos e Otimização Não Linear",
         "shifts" : [
