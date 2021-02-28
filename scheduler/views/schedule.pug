@@ -6,15 +6,17 @@ html
   link(rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css")
   link(rel="stylesheet" href='../static/css/schedule-navbar.css')
   title Schedule Template | CodyHouse
+
 .w3-bar.backgroundColor
   a.w3-bar-item.myFont.button(href='/schedule') My Schedule
   a.w3-bar-item.myFont.button(href='#') Custom
   a.w3-bar-item.myFont.button(href='/logout') Logout
+
 header.cd-main-header.text-center.flex.flex-column.flex-center
   p.margin-top-md.margin-bottom-xl
     | &#x1F448; 
-    a.cd-article-link(href='https://codyhouse.co/gem/schedule-template') Article &amp; Download
-  h1.text-xl Schedule Template
+    a.cd-article-link(href='https://https://github.com/K1llByte/hackaton_sei') Monkey Nation Github
+  h1.text-xl Schedule
 .cd-schedule.cd-schedule--loading.margin-top-lg.margin-bottom-lg.js-cd-schedule
   .cd-schedule__timeline
     ul
@@ -57,6 +59,8 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
       li
         span 18:00
   // .cd-schedule__timeline
+  -var color=["#ee8ebc", "#eec08e", "#bcee8e", "#8eeec0", "#8edcee", "#c08eee", "#ffff99", "#ff6666", "#adadad"];
+  -var i = 0;
   .cd-schedule__events
     ul
       li.cd-schedule__group
@@ -66,7 +70,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 0
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0' style="background-color:"+`${color[i++]}`)
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -75,10 +79,10 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
         ul
           each course in schedule
             if course.schedule.day_of_week == 1
-              li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
-                  em.cd-schedule__name= `${course.course_id}`
-                  em.cd-schedule__name= `${course.shift_id}`
+                li.cd-schedule__event
+                  a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0' style="background-color:"+`${color[i++]}`)
+                    em.cd-schedule__name= `${course.course_id}`
+                    em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
         .cd-schedule__top-info
           span Wednesday
@@ -86,7 +90,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 2
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0' style="background-color:"+`${color[i++]}`)
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -96,7 +100,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 3
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0' style="background-color:"+`${color[i++]}`)
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -106,7 +110,7 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 4
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0' style="background-color:"+`${color[i++]}`)
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
@@ -116,17 +120,17 @@ header.cd-main-header.text-center.flex.flex-column.flex-center
           each course in schedule
             if course.schedule.day_of_week == 5
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0' style="background-color:"+`${color[i++]}`)
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
       li.cd-schedule__group
         .cd-schedule__top-info
-          span SUnday
+          span Sunday
         ul
           each course in schedule
             if course.schedule.day_of_week == 6
               li.cd-schedule__event
-                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0')
+                a(data-start=`${to_hour_minute(course.schedule.start)}` data-end=`${to_hour_minute(course.schedule.end)}` data-content='event-abs-circuit' data-event='event-1' href='#0' style="background-color:"+`${color[i++]}`)
                   em.cd-schedule__name= `${course.course_id}`
                   em.cd-schedule__name= `${course.shift_id}`
   .cd-schedule-modal
