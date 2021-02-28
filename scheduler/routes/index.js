@@ -35,7 +35,7 @@ function auth_header(token)
 
 function to_hour_minute(date)
 {
-    return `${date.getHours()}:${date.getMinutes()}`
+    return date.toISOString().substr(11,5);
 }
 
 // ---------------------------------------------------------------
@@ -73,12 +73,25 @@ router.get('/logout', (req, res) => {
 
 
 router.get('/schedule', check_auth, async (req,res) => {
-    Schedule.make_schedule(req.user)
+    Schedule.mk_user_schedule(req.user)
     .then(data => {
         res.render('schedule',{schedule: data, to_hour_minute: to_hour_minute});
     })
     .catch(err => {
-        res.json({ "error": err.message })
+        res.render("error", err.message);
+    });
+});
+
+
+router.get('/custom', async (req,res) => {
+    //console.log("req.body.custom",req.body.custom);
+
+    Schedule.get_all((req.body == undefined || req.body.custom == undefined) ? [] : req.body.custom)
+    .then(data => {
+        res.render('schedule',{schedule: data, to_hour_minute: to_hour_minute});
+    })
+    .catch(err => {
+        res.render("error", err.message );
     });
 });
 

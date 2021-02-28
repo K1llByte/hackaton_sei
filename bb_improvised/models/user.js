@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const course_schema = new mongoose.Schema({
     course_id: String,
-    shift: String
+    shifts:    [String]
 }, 
 {
     versionKey: false
