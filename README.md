@@ -1,4 +1,6 @@
-# hackaton_sei
+# MonkeSwap
+
+What's MonkeSwap you ask? Maybe 
 
 ## Populate Commands
 ```sh
