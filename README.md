@@ -1,6 +1,43 @@
 # MonkeSwap
 
-What's MonkeSwap you ask? Maybe 
+MonkeSwap prints the student's calendar according to its owned classes.
+
+## Installing
+
+> **Note:** Must be installed `node` and `npm`
+
+```sh
+cd bb_improvised/
+npm install
+```
+
+```sh
+cd scheduler/
+npm install
+```
+
+## Usage 
+
+### **Blackboard Dummy Server**
+
+```sh
+cd bb_improvised/
+node bin/www
+```
+
+### **MonkeSwap**
+
+```sh
+cd scheduler/
+node bin/www
+```
+
+### **Blackboard Dummy Server**
+
+```sh
+cd bb_improvised/
+node bin/www
+```
 
 ## Populate Commands
 ```sh

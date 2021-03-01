@@ -16,10 +16,12 @@ const LocalStrategy = require('passport-local').Strategy;
 const axios = require('axios');
 const mongoose = require('mongoose');
 
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
 
 
 
+dotenv.config();
 // Set up default mongoose connection
 const MONGODB_URL = 'mongodb://127.0.0.1/scheduler';
 mongoose.connect(MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -88,12 +90,13 @@ app.use(session({
       return uuidv4()
     },
     store: new FileStore({logFn: function(){}}),
-    secret: 'O meu segredo',
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: false,
     retries: 0
 }))
 
+console.log("process.env.SECRET",process.env.SECRET);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -103,7 +106,7 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser('O meu segredo'));
+app.use(cookieParser(process.env.SECRET));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(passport.initialize());
